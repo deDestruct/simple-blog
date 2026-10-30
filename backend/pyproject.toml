@@ -1,5 +1,5 @@
 [project]
-name = "backend"
+name = "blog-api"
 version = "0.1.0"
 description = "Simple blog project"
 readme = "README.md"
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-backend = "backend:main"
+blog-api = "blog_api:main"
 
 [build-system]
 requires = ["uv_build>=0.13.6,<0.14.0"]
@@ -26,7 +26,7 @@ dev = [
 ]
 
 [tool.fastapi]
-entrypoint = "blog_api.main:app"      # где приложение — для команды fastapi
+entrypoint = "blog_api.main:app"      # вход для фастапи
 
 [tool.ruff.lint]
 extend-select = ["E", "W", "I", "UP", "B"]
