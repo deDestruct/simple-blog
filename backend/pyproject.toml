@@ -30,12 +30,8 @@ entrypoint = "blog_api.main:app"      # вход для фастапи
 
 [tool.ruff.lint]
 extend-select = ["E", "W", "I", "UP", "B"]
-ignore = ["E501", "B008"]              # B008 — см. ниже
+ignore = ["E501", "B008"]              
 
 [tool.pytest]
 testpaths = ["tests"]
 addopts = ["--import-mode=importlib", "-ra"]
-
-[tool.pyright]
-typeCheckingMode = "standard"
-include = ["src", "tests"]
